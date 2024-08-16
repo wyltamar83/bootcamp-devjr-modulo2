@@ -11,6 +11,7 @@
         background-color: #F5F5F5;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
+
       .container{
         background-color: #E9E9E9;
         margin: auto;
@@ -19,14 +20,53 @@
         border-radius: 5px;
         overflow: hidden;
       }
+
       .header{
         padding: 40px;
       }
+
       .flex-container{
         display: flex;
-        background-color: #006868 ;
         justify-content: space-around;
+      }
+
+      .column-1{
+        background-color: #006868 ;
+        color: #FFFF;
+        width: 50%;
         padding: 20px;
+      }
+
+      .subscription-title{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      .row-2{
+        margin-left: 10px;
+      }
+
+      .row-3{
+        margin-left: 10px;
+      }
+      
+      .column-2{
+        background-color: #009E9E;
+        color: #FFFF;
+        width: 50%;
+        padding: 20px;
+      }
+
+      .price{
+        font-weight: bold; 
+        font-size: 26px;
+      }
+      
+      .month{
+        font-size: 13px;
+        font-style: italic;
+        margin-left: 15px;
       }
 
       .header-title{
@@ -42,6 +82,23 @@
         margin-top: 20px;
         margin-bottom: 15px;
       }
+
+      .button{
+        background-color: #CCCCCC;
+        font-size: 16px;
+        border-radius: 4px;
+        color: #006666;
+        padding: 10px 60px;
+        border: none;
+        margin: 20px 10px 30px 10px;
+        cursor: pointer;
+      }
+
+      .button:hover{
+        background-color: #E9E9E9;
+      }
+
+
   </style>
 
 </head>
@@ -60,11 +117,22 @@
                    </div>
               </div>
               <div class="flex-container">
-                   <div>
-                        Coluna 1
+                   <div class="column-1">
+                        <div class="subscription-title">
+                            Assinatura mensal:
+                        </div>
+                        <div class="row-2">
+                            <span class="price">R$ 99,99</span>
+                            <span class="month">por mês.</span> 
+                        </div>
+                        <div class="row-3">
+                          Cancele a qualquer momento.
+                        </div>
+                        <button class="button">Assinar Agora</button>
                    </div>
-                   <div>
-                        Coluna 2
+                   <div class="column-2">
+                        <div>Imagem</div>
+                        <div>Você terá acesso:</div>
                    </div>
               </div>
         </div>

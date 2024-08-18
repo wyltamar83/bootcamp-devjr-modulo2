@@ -23,7 +23,7 @@
       }
 
       .header{
-        padding: 40px;
+        padding: 2.5rem;
       }
 
       .flex-container{
@@ -35,28 +35,28 @@
         background-color: #006868 ;
         color: #FFFF;
         width: 50%;
-        padding: 20px;
+        padding: 1.2rem;
       }
 
       .subscription-title{
         text-align: center;
-        margin-bottom: 20px;
-        font-size: 18px;
+        margin-bottom: 1.2rem;
+        font-size: 1.1rem;
       }
 
       .row-2{
-        margin-left: 10px;
+        margin-left: 0.6rem;
       }
 
       .row-3{
-        margin-left: 10px;
+        margin-left: 0.6rem;
       }
       
       .column-2{
         background-color: #009E9E;
         color: #FFFF;
         width: 50%;
-        padding: 10px 20px;
+        padding: 0.6rem 1.2rem;
       }
 
       .image-group{
@@ -65,37 +65,37 @@
 
       .price{
         font-weight: bold; 
-        font-size: 26px;
+        font-size: 1.6rem;
       }
       
       .month{
-        font-size: 13px;
+        font-size: 0.8rem;
         font-style: italic;
-        margin-left: 15px;
+        margin-left: 0.9rem;
       }
 
       .header-title{
         color: #006868;
-        font-size: 31px;
+        font-size: 1.9rem;
         font-weight: 700;
       }
 
       .header-subtitle{
         color: #009E9E;
-        font-size: 18px;
+        font-size: 1.1rem;
         font-weight: 500;
-        margin-top: 20px;
-        margin-bottom: 15px;
+        margin-top: 1.2rem;
+        margin-bottom: 0.9rem;
       }
 
       .button{
         background-color: #CCCCCC;
-        font-size: 16px;
-        border-radius: 4px;
+        font-size: 1rem;
+        border-radius: 0.2rem;
         color: #006666;
-        padding: 10px 70px;
+        padding: 0.6rem 4.3rem;
         border: none;
-        margin: 30px 10px 20px 10px;
+        margin: 1.8rem 0.6rem 1.2rem 0.6rem;
         cursor: pointer;
       }
 
@@ -103,6 +103,26 @@
         background-color: #E9E9E9;
       }
 
+      @media screen and (max-width: 620px) {
+        html{
+          font-size: 14px;
+        }
+        .flex-container{
+          flex-direction: column;
+        }
+        .column-1, .column-2{
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .container{
+          width: 95%;
+        }
+        .button{
+          justify-content: center;
+          width: 95%;
+          
+        }
+      }
 
   </style>
 

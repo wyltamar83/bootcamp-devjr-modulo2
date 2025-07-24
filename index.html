@@ -31,26 +31,36 @@
             display: flex;
             background-color: #006D6C;
             justify-content: space-around;
-            padding: 20px;
+            
          }
 
          .header-title{
             color: #006D6C;
             font-size: 32px;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
          }
 
          .header-subtitle{
-            color: #006D6C;
+            color: #008C8A;
             padding-bottom: 15px;
             font-size: 19px;
             font-weight: 500;
          }
 
          .column-left{
-            color: #F0F1F6;
+            color: #FFFFFF;
+            background-color:#006D6C; 
+            width: 50%;
+            padding: 20px;
+         }
+
+         .column-right{
+            color: #FFF;
+            background-color:#008C8A;
+            width: 50%;
+            padding: 20px;
          }
 
          .title-column1{
@@ -58,10 +68,15 @@
             text-align: center;
             margin-bottom: 20px;
          }
-         span{
-            font-weight:bold;
+         .price{
             font-size: 25px;
+            font-weight: 700;
             padding-right: 15px;
+         }
+
+         .month{
+            font-size: 15px;
+            font-style: italic;
          }
 
          .offer-colun1{
@@ -75,10 +90,17 @@
             font-size: 18px;
             border: none;
             border-radius: 4px;
-            padding: 15px 80px;
-            margin-left: 1px;
-            
+            padding: 15px 32px;
+            width: 100%;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            cursor: pointer;
          }
+
+         button:hover{
+            background-color: #E9E9E9;
+         }
+
 
     </style>
 </head>
@@ -104,7 +126,8 @@
                         Assinatura mensal:
                     </div>
                     <div class="offer-colun1">
-                        <span>R$ 99,99 </span> por mês.<br>
+                        <span class="price">R$ 99,99 </span>
+                        <span class="month">por mês.</span> <br> 
                         Cancele a qualquer momento.
                     </div>
                     <div>
@@ -112,7 +135,7 @@
                     </div>
 
                 </div>
-                <div>
+                <div class="column-right">
                     coluna 2
                 </div>
             </div>

@@ -9,6 +9,7 @@
 
         body{
             background-color: #F5F5F5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
          .container{
@@ -16,12 +17,15 @@
             margin: auto;
 
             width:600px;
-            padding: 40px;
+
+            box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
         } 
 
-         .segunda-coluna{
-            background-color: #008C89;
-         }
+        .header{
+            padding: 40px;
+        }
 
          .flex-container{
             display: flex;
@@ -30,15 +34,39 @@
             padding: 20px;
          }
 
+         .header-title{
+            color: #006D6C;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+
+         }
+
+         .header-subtitle{
+            color: #006D6C;
+            padding-bottom: 15px;
+            font-size: 19px;
+            font-weight: 500;
+         }
+
     </style>
 </head>
 <body>
     
 </body>
         <div class="container">
-            <div>
-                Primeira linha
-            </div>
+            <div class="header">
+                 <div class="header-title">
+                      Entre para a nossa comunidade!
+                 </div>
+                 <div class="header-subtitle">
+                       Faça a sua assinatura agora e ganhe 30% de desconto!
+                 </div>
+                 <div>
+                       Faça parte da nossa comunidade de desenvoldedores.<br>
+                       Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
+                 </div>
+           </div>
             <div class="flex-container"> 
                 <div>
                     coluna 1
